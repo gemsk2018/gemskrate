@@ -14,6 +14,7 @@
             /* Изменено на центрирование таблицы */
             font-size: 16px;
             font-family: Arial, sans-serif;
+            
         }
 
         h1 {
@@ -121,21 +122,28 @@
 
             <!-- <th>№</th> -->
             <th colspan="3" , style="width: 35%;">НАИМЕНОВАНИЕ</th>
+            <th style="width: 12%;">Фреш</th>
             <th style="width: 12%;">Стандарт</th>
             <th style="width: 12%;">Отраслевой</th>
-            <th style="width: 12%;">Фреш</th>
             <th style="width: 12%;">Индивидуальный</th>
         </tr>
         <!-- Объединённая строка -->
 
         <!-- Данные -->
         <tr>
-            <td style="width: 0.1%;">№</td>
-            <td colspan="2" , class="narrow-cell">Стоимость тарифа</td>
-            <td style="text-align: center;">от 130 000 тг</td>
-            <td style="text-align: center;">от 193 000 тг</td>
+            
+            <td colspan="3" , class="narrow-cell">Стоимость тарифа при подключении (тг/год)</td>
             <td style="text-align: center;">от 110 000 тг</td>
+            <td style="text-align: center;">130 000 тг</td>
+            <td style="text-align: center;">от 193 000 тг</td>
             <td style="text-align: center;">от 806 800 тг</td>
+        </tr>
+        <tr>
+            <td colspan="3" , class="narrow-cell">Стоимость тарифа при продлении (тг/год)</td>
+            <td style="text-align: center;">от 110 000 тг</td>
+            <td style="text-align: center;">106 600 тг</td>
+            <td style="text-align: center;">от 170 000 тг</td>
+            <td style="text-align: center;">от 784 800 тг</td>
         </tr>
 
         <tr>
@@ -149,12 +157,12 @@
         <tr>
             <td style="width: 0.1%;">1</td>
             <td colspan="2">«1С:Обновление программ»</td>
-            <td style="text-align: center;">+</td>
-            <td style="text-align: center;">+</td>
             <td style="text-align: center;">автообновление</td>
             <td style="text-align: center;">+</td>
+            <td style="text-align: center;">+</td>
+            <td style="text-align: center;">+</td>
         </tr>
-
+        
         <tr>
             <td style="width: 0.1%;">2</td>
             <td colspan="2">«1С-Коннект» – мгновенное гарантированное соединение со специалистом поддержки</td>
@@ -225,24 +233,24 @@
             <td style="width: 0.1%;">9</td>
             <td colspan="2">«1С:Облачный архив» - автоматическое резервное копирование информационных баз в облачное
                 хранилище 1С (доступный объем дисковой квоты 20 Гб)</td>
+                <td style="text-align: center;">регулярное резервное копирование</td>
+                <td style="text-align: center;">+</td>
             <td style="text-align: center;">+</td>
-            <td style="text-align: center;">+</td>
-            <td style="text-align: center;">регулярное резервное копирование</td>
             <td style="text-align: center;">+</td>
         </tr>
 
         <tr>
             <td style="width: 0.1%;">10</td>
             <td colspan="2">«1С:Линк» – удаленный доступ к программам 1С (до 2х ИБ с 1 туннелем)</td>
-            <td style="text-align: center;">+</td>
-            <td style="text-align: center;">+</td>
             <td style="text-align: center;">-</td>
+            <td style="text-align: center;">+</td>
+            <td style="text-align: center;">+</td>
             <td style="text-align: center;">+</td>
         </tr>
 
         <tr>
             <td style="width: 0.1%;">11</td>
-            <td colspan="2">Другие полезные сервисы 1С:ИТС с portal.1c.ru</td>
+            <td colspan="2">И другие полезные сервисы 1С:ИТС с portal.1c.ru</td>
             <td style="text-align: center;">+</td>
             <td style="text-align: center;">+</td>
             <td style="text-align: center;">+</td>
@@ -299,9 +307,9 @@
             <td colspan="2">Часы сопровождения в тарифе: услуги специалиста через удаленный доступ (обновление платформы
                 и типовой конфигурации, тестирование базы данных, создание архивных копий базы данных) не более 1 ИБ
             </td>
+            <td style="text-align: center;">-</td>
             <td style="text-align: center;">0,5 часа в квартал</td>
             <td style="text-align: center;">1 час в квартал</td>
-            <td style="text-align: center;">-</td>
             <td style="text-align: center;">от 3 часов в месяц</td>
         </tr>
 
@@ -316,18 +324,18 @@
         <tr>
             <td style="width: 0.1%;">17</td>
             <td colspan="2">Услуги специалиста свыше тарифа (тг/час)</td>
-            <td style="text-align: center;">от 18 800</td>
-            <td style="text-align: center;">от 21 200</td>
-            <td style="text-align: center;">от 18 800</td>
+            <td style="text-align: center;">18 800</td>
+            <td style="text-align: center;">18 000</td>
+            <td style="text-align: center;">21 200</td>
             <td style="text-align: center;">от 22 500</td>
         </tr>
 
         <tr>
             <td style="width: 0.1%;">18</td>
             <td colspan="2">Линия Консультаций с технологией удаленного подключения (тг/час)</td>
-            <td style="text-align: center;">от 18 800</td>
-            <td style="text-align: center;">от 21 200</td>
-            <td style="text-align: center;">от 18 800</td>
+            <td style="text-align: center;">18 800</td>
+            <td style="text-align: center;">18 800</td>
+            <td style="text-align: center;">21 200</td>
             <td style="text-align: center;">от 22 500</td>
         </tr>
 
@@ -335,10 +343,10 @@
             <td style="width: 0.1%;">19</td>
             <td colspan="2">Сопровождение и доработка конфигураций редакции 2.0 и конфигураций Управление торговлей для
                 Казахстана, Управление нашей фирмой для Казахстана, Розница для Казахстана</td>
-            <td style="text-align: center;">от 22 500</td>
-            <td style="text-align: center;">от 22 500</td>
-            <td style="text-align: center;">-</td>
-            <td style="text-align: center;">от 22 500</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center;">22 500</td>
+                <td style="text-align: center;">22 500</td>
+                <td style="text-align: center;">от 22 500</td>
         </tr>
     </table>
 
