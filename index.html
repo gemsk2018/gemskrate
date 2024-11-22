@@ -1,431 +1,432 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ТАРИФНЫЕ ПЛАНЫ</title>
     <style>
-      /* Стили для центрирования заголовка и таблицы */
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* Изменено на центрирование таблицы */
-        font-size: 16px;
-        font-family: Arial, sans-serif;
-      }
+        /* Стили для центрирования заголовка и таблицы */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Изменено на центрирование таблицы */
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
 
-      h1 {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 0.1%;
-      }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 0.1%;
+        }
 
-      table {
-        border-collapse: collapse;
-        margin-top: 20px;
-        width: 75%;
-        margin-bottom: 40px;
-      }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 75%;
+            margin-bottom: 40px;
+        }
 
-      th,
-      td {
-        padding: 10px 20px;
-        border: 1px solid #ddd;
-        text-align: left;
-      }
+        th,
+        td {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
 
-      th {
-        background-color: #76c4f4;
-        text-align: center;
-      }
+        th {
+            background-color: #76c4f4;
+            text-align: center;
+        }
 
-      th,
-      th.contact-info {
-        text-align: center;
-        font-weight: bold;
-      }
+        th,
+        th.contact-info {
+            text-align: center;
+            font-weight: bold;
+        }
 
-      .full-width {
-        background-color: rgb(250, 253, 212);
-        font-weight: bold;
-        text-align: left;
-      }
+        .full-width {
+            background-color: rgb(250, 253, 212);
+            font-weight: bold;
+            text-align: left;
+        }
 
-      .full-width2 {
-        background-color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-align: center;
-      }
+        .full-width2 {
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-align: center;
+        }
 
-      .update-date-before-table-text {
-        width: 100%; /* Занимает всю ширину экрана */
-        color: #555;
-        font-size: 12px;
-        box-sizing: border-box; /* Учитывает отступы в ширине */
-        text-align: center; /* Выравнивание текста по левому краю */
-        margin-bottom: 1%;
-      }
+        .update-date-before-table-text {
+            width: 100%;
+            /* Занимает всю ширину экрана */
+            color: #555;
+            font-size: 12px;
+            box-sizing: border-box;
+            /* Учитывает отступы в ширине */
+            text-align: center;
+            /* Выравнивание текста по левому краю */
+            margin-bottom: 1%;
+        }
 
-      .after-table-text {
-        margin-top: 10px;
-        margin-left: 30px;
-        width: 95%;
-        /* Совпадает с шириной таблицы */
-        text-align: left;
-        /* Выровнен по левому краю */
-      }
+        .after-table-text {
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 95%;
+            /* Совпадает с шириной таблицы */
+            text-align: left;
+            /* Выровнен по левому краю */
+        }
 
-      .after-table-text_2 {
-        margin-top: 10px;
-        margin-bottom: 70px;
-        margin-left: 30px;
-        width: 95%;
-        /* Совпадает с шириной таблицы */
-        text-align: left;
-        /* Выровнен по левому краю */
-      }
+        .after-table-text_2 {
+            margin-top: 10px;
+            margin-bottom: 70px;
+            margin-left: 30px;
+            width: 95%;
+            /* Совпадает с шириной таблицы */
+            text-align: left;
+            /* Выровнен по левому краю */
+        }
 
-      .after-table-text_3 {
-        margin-top: px;
-        margin-bottom: 20px;
-        margin-left: 20%;
-        width: 95%;
-        text-align: left;
-      }
+        .after-table-text_3 {
+            margin-top: px;
+            margin-bottom: 20px;
+            margin-left: 20%;
+            width: 95%;
+            text-align: left;
+        }
 
-      .after-table-text_4 {
-        margin-top: px;
-        margin-left: 20%;
-        margin-bottom: 6%;
-        width: 95%;
-        text-align: left;
-      }
+        .after-table-text_4 {
+            margin-top: px;
+            margin-left: 20%;
+            margin-bottom: 6%;
+            width: 95%;
+            text-align: left;
+        }
 
-      .contact-info {
-        margin-left: 75px;
-        /* Отступ между частями текста */
-        margin-bottom: 10px;
-      }
+        .contact-info {
+            margin-left: 75px;
+            /* Отступ между частями текста */
+            margin-bottom: 10px;
+        }
 
-      .contact-info_2 {
-        margin-left: 120px;
-        /* Отступ между частями текста */
-        margin-bottom: 10px;
-      }
+        .contact-info_2 {
+            margin-left: 120px;
+            /* Отступ между частями текста */
+            margin-bottom: 10px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Заголовок -->
     <h1>ТАРИФНЫЕ ПЛАНЫ</h1>
     <p class="update-date-before-table-text">Дата актуализации: 01.12.24</p>
     <!-- Таблица -->
     <table>
-      <!-- Заголовок столбцов -->
-      <tr>
-        <!-- <th>№</th> -->
-        <th colspan="3" , style="width: 35%">НАИМЕНОВАНИЕ</th>
-        <th style="width: 12%">Фреш</th>
-        <th style="width: 12%">Стандарт</th>
-        <th style="width: 12%">Отраслевой</th>
-        <th style="width: 12%">Индивидуальный</th>
-      </tr>
-      <!-- Объединённая строка -->
+        <!-- Заголовок столбцов -->
+        <tr>
+            <!-- <th>№</th> -->
+            <th colspan="3" , style="width: 35%">НАИМЕНОВАНИЕ</th>
+            <th style="width: 12%">Фреш</th>
+            <th style="width: 12%">Стандарт</th>
+            <th style="width: 12%">Отраслевой</th>
+            <th style="width: 12%">Индивидуальный</th>
+        </tr>
+        <!-- Объединённая строка -->
 
-      <!-- Данные -->
-      <tr>
-        <td colspan="3" , class="narrow-cell">
-          Стоимость тарифа при подключении (тг/год)
-        </td>
-        <td style="text-align: center">от 110 000 тг</td>
-        <td style="text-align: center">130 000 тг</td>
-        <td style="text-align: center">от 193 000 тг</td>
-        <td style="text-align: center">от 806 800 тг</td>
-      </tr>
-      <tr>
-        <td colspan="3" , class="narrow-cell">
-          Стоимость тарифа при продлении (тг/год)
-        </td>
-        <td style="text-align: center">от 110 000 тг</td>
-        <td style="text-align: center">106 600 тг</td>
-        <td style="text-align: center">от 170 000 тг</td>
-        <td style="text-align: center">от 784 800 тг</td>
-      </tr>
+        <!-- Данные -->
+        <tr>
+            <td colspan="3" , class="narrow-cell">
+                Стоимость тарифа при подключении (тг/год)
+            </td>
+            <td style="text-align: center">от 110 000 тг</td>
+            <td style="text-align: center">130 000 тг</td>
+            <td style="text-align: center">от 193 000 тг</td>
+            <td style="text-align: center">от 806 800 тг</td>
+        </tr>
+        <tr>
+            <td colspan="3" , class="narrow-cell">
+                Стоимость тарифа при продлении (тг/год)
+            </td>
+            <td style="text-align: center">от 110 000 тг</td>
+            <td style="text-align: center">106 600 тг</td>
+            <td style="text-align: center">от 170 000 тг</td>
+            <td style="text-align: center">от 784 800 тг</td>
+        </tr>
 
-      <tr>
-        <td colspan="3" style="text-align: center; font-weight: bold">
-          Сервисы 1С:ИТС в тарифе
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+        <tr>
+            <td colspan="3" style="text-align: center; font-weight: bold">
+                Сервисы 1С:ИТС в тарифе
+                <br>
+                <img src="its.png" alt="Описание изображения" style="width: 40%;; height: 40%;">
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
 
-      <tr>
-        <td style="width: 0.1%">1</td>
-        <td colspan="2">«1С:Обновление программ»</td>
-        <td style="text-align: center">автообновление</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        </tr>
+        <tr>
+            <td style="width: 0.1%">1</td>
+            <td colspan="2">«1С:Обновление программ»</td>
+            <td style="text-align: center">автообновление</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">2</td>
-        <td colspan="2">
-          «1С-Коннект» – мгновенное гарантированное соединение со специалистом
-          поддержки
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">2</td>
+            <td colspan="2">
+                «1С-Коннект» – мгновенное гарантированное соединение со специалистом
+                поддержки
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">3</td>
-        <td colspan="2">«Информационная система 1С:ИТС» на сайте its.1c.kz</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">3</td>
+            <td colspan="2">«Информационная система 1С:ИТС» на сайте its.1c.kz</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">4</td>
-        <td colspan="2">
-          «Отвечает аудитор» - консультации от экспертов, аудиторов и методистов
-          по электронной почте через сайт its.1c.kz
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">4</td>
+            <td colspan="2">
+                «Отвечает аудитор» - консультации от экспертов, аудиторов и методистов
+                по электронной почте через сайт its.1c.kz
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">5</td>
-        <td colspan="2">
-          «1С:ЭСФ для Казахстана» - обмен электронными документами с ИС ЭСФ (до
-          10 БИНов)
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">5</td>
+            <td colspan="2">
+                «1С:ЭСФ для Казахстана» - обмен электронными документами с ИС ЭСФ (до
+                10 БИНов)
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">6</td>
-        <td colspan="2">
-          «1С:Электронные трудовые договоры для Казахстана» - автоматическая
-          отправка трудовых договоров из 1С в ЕСУТД enbek.kz (до 10 обращений)
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">6</td>
+            <td colspan="2">
+                «1С:Электронные трудовые договоры для Казахстана» - автоматическая
+                отправка трудовых договоров из 1С в ЕСУТД enbek.kz (до 10 обращений)
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">7</td>
-        <td colspan="2">
-          «1С:Контрагент для Казахстана» - автоматическое заполнение реквизитов
-          контрагентов в 1С
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">7</td>
+            <td colspan="2">
+                «1С:Контрагент для Казахстана» - автоматическое заполнение реквизитов
+                контрагентов в 1С
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">8</td>
-        <td colspan="2">
-          «1С:Лекторий» – семинары по законодательству и его отражению в
-          программах 1C на сайте its.1c.kz
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
-      <!-- с этого плюсы смотри -->
-      <tr>
-        <td style="width: 0.1%">9</td>
-        <td colspan="2">
-          «1С:Облачный архив» - автоматическое резервное копирование
-          информационных баз в облачное хранилище 1С (доступный объем дисковой
-          квоты 20 Гб)
-        </td>
-        <td style="text-align: center">регулярное резервное копирование</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">8</td>
+            <td colspan="2">
+                «1С:Лекторий» – семинары по законодательству и его отражению в
+                программах 1C на сайте its.1c.kz
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
+        <!-- с этого плюсы смотри -->
+        <tr>
+            <td style="width: 0.1%">9</td>
+            <td colspan="2">
+                «1С:Облачный архив» - автоматическое резервное копирование
+                информационных баз в облачное хранилище 1С (доступный объем дисковой
+                квоты 20 Гб)
+            </td>
+            <td style="text-align: center">регулярное резервное копирование</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">10</td>
-        <td colspan="2">
-          «1С:Линк» – удаленный доступ к программам 1С (до 2х ИБ с 1 туннелем)
-        </td>
-        <td style="text-align: center">-</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">10</td>
+            <td colspan="2">
+                «1С:Линк» – удаленный доступ к программам 1С (до 2х ИБ с 1 туннелем)
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">11</td>
-        <td colspan="2">И другие полезные сервисы 1С:ИТС с portal.1c.ru</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">11</td>
+            <td colspan="2">И другие полезные сервисы 1С:ИТС с portal.1c.ru</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">12</td>
-        <td colspan="2">
-          Консультации по вопросам доступа к сервисам «1С:ИТС Казахстан»
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">12</td>
+            <td colspan="2">
+                Консультации по вопросам доступа к сервисам «1С:ИТС Казахстан»
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td colspan="3" style="text-align: center; font-weight: bold">
-          Услуги 1С:Франчайзи ГЕМ
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+        <tr>
+            <td colspan="3" style="text-align: center; font-weight: bold">
+                Услуги 1С:Франчайзи ГЕМ
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">13</td>
-        <td colspan="2">Оперативное реагирование: срок рассмотрения заявки</td>
-        <td style="text-align: center">До 48 часов в порядке очереди</td>
-        <td style="text-align: center">До 48 часов в порядке очереди</td>
-        <td style="text-align: center">До 48 часов в порядке очереди</td>
-        <td style="text-align: center">согласно договора</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">13</td>
+            <td colspan="2">Оперативное реагирование: срок рассмотрения заявки</td>
+            <td style="text-align: center">До 48 часов в порядке очереди</td>
+            <td style="text-align: center">До 48 часов в порядке очереди</td>
+            <td style="text-align: center">До 48 часов в порядке очереди</td>
+            <td style="text-align: center">согласно договора</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">14</td>
-        <td colspan="2">
-          Линия Консультации по правильной технологии работы с типовым
-          функционалом (без анализа базы) по тел. 36-07-83 (бесплатно не более 5
-          минут за 1 звонок)
-        </td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">14</td>
+            <td colspan="2">
+                Линия Консультации по правильной технологии работы с типовым
+                функционалом (без анализа базы) по тел. 36-07-83 (бесплатно не более 5
+                минут за 1 звонок)
+            </td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">15</td>
-        <td colspan="2">Закрепление специалиста: Личный Консультант</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-        <td style="text-align: center">+</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">15</td>
+            <td colspan="2">Закрепление специалиста: Личный Консультант</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+            <td style="text-align: center">+</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">16</td>
-        <td colspan="2">
-          Часы сопровождения в тарифе: услуги специалиста через удаленный доступ
-          (обновление платформы и типовой конфигурации, тестирование базы
-          данных, создание архивных копий базы данных) не более 1 ИБ
-        </td>
-        <td style="text-align: center">-</td>
-        <td style="text-align: center">0,5 часа в квартал</td>
-        <td style="text-align: center">0,5 часа в квартал</td>
-        <td style="text-align: center">от 3 часов в месяц</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">16</td>
+            <td colspan="2">
+                Часы сопровождения в тарифе: услуги специалиста через удаленный доступ
+                (обновление платформы и типовой конфигурации, тестирование базы
+                данных, создание архивных копий базы данных) не более 1 ИБ
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">0,5 часа в квартал</td>
+            <td style="text-align: center">0,5 часа в квартал</td>
+            <td style="text-align: center">от 3 часов в месяц</td>
+        </tr>
 
-      <tr>
-        <td colspan="3" style="text-align: center; font-weight: bold">
-          Дополнительные услуги к тарифу
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+        <tr>
+            <td colspan="3" style="text-align: center; font-weight: bold">
+                Дополнительные услуги к тарифу
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">17</td>
-        <td colspan="2">Услуги специалиста свыше тарифа (тг/час)</td>
-        <td style="text-align: center">18 800</td>
-        <td style="text-align: center">18 800</td>
-        <td style="text-align: center">21 200</td>
-        <td style="text-align: center">от 22 500</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">17</td>
+            <td colspan="2">Услуги специалиста свыше тарифа (тг/час)</td>
+            <td style="text-align: center">18 800</td>
+            <td style="text-align: center">18 800</td>
+            <td style="text-align: center">21 200</td>
+            <td style="text-align: center">от 22 500</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">18</td>
-        <td colspan="2">
-          Линия Консультаций с технологией удаленного подключения (тг/час)
-        </td>
-        <td style="text-align: center">18 800</td>
-        <td style="text-align: center">18 800</td>
-        <td style="text-align: center">21 200</td>
-        <td style="text-align: center">от 22 500</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">18</td>
+            <td colspan="2">
+                Линия Консультаций с технологией удаленного подключения (тг/час)
+            </td>
+            <td style="text-align: center">18 800</td>
+            <td style="text-align: center">18 800</td>
+            <td style="text-align: center">21 200</td>
+            <td style="text-align: center">от 22 500</td>
+        </tr>
 
-      <tr>
-        <td style="width: 0.1%">19</td>
-        <td colspan="2">
-          Сопровождение и доработка конфигураций редакции 2.0 и конфигураций
-          Управление торговлей для Казахстана, Управление нашей фирмой для
-          Казахстана, Розница для Казахстана
-        </td>
-        <td style="text-align: center">-</td>
-        <td style="text-align: center">22 500</td>
-        <td style="text-align: center">22 500</td>
-        <td style="text-align: center">от 22 500</td>
-      </tr>
+        <tr>
+            <td style="width: 0.1%">19</td>
+            <td colspan="2">
+                Сопровождение и доработка конфигураций редакции 2.0 и конфигураций
+                Управление торговлей для Казахстана, Управление нашей фирмой для
+                Казахстана, Розница для Казахстана
+            </td>
+            <td style="text-align: center">-</td>
+            <td style="text-align: center">22 500</td>
+            <td style="text-align: center">22 500</td>
+            <td style="text-align: center">от 22 500</td>
+        </tr>
     </table>
-  </body>
+</body>
 
-  <p class="after-table-text_3">
+<p class="after-table-text_3">
     <span>Информация по применению тарифов:</span>
-  </p>
+</p>
 
-  <p class="after-table-text_3">
-    <span
-      >• Тариф «Отраслевой» применяется при наличии у Заказчика программного
-      продукта «1С:Предприятие 8» версии ПРОФ и отраслевого решения компании
-      «1С».</span
-    >
-  </p>
+<p class="after-table-text_3">
+    <span>• Тариф «Отраслевой» применяется при наличии у Заказчика программного
+        продукта «1С:Предприятие 8» версии ПРОФ и отраслевого решения компании
+        «1С».</span>
+</p>
 
-  <p class="after-table-text_4">
-    <span
-      >• Тариф «Индивидуальный» зависит от наличия отраслевых решений,
-      особенностей учета, индивидуальных доработок конфигураций и количества
-      пользователей.</span
-    >
-  </p>
+<p class="after-table-text_4">
+    <span>• Тариф «Индивидуальный» зависит от наличия отраслевых решений,
+        особенностей учета, индивидуальных доработок конфигураций и количества
+        пользователей.</span>
+</p>
 
-  <p class="after-table-text">
+<p class="after-table-text">
     <span>1С:Франчайзи-ГЕМ</span>
     <span class="contact-info">Телефон: +7(7152)36-34-36, 8-705-194-21-12</span>
-  </p>
+</p>
 
-  <p class="after-table-text_2">
+<p class="after-table-text_2">
     <span>gem@gem.kz</span>
-    <span class="contact-info_2"
-      >Адрес: Казахстан, Петропавловск, ул. Интернациональная 18, н.п. 2 (вход с
-      торца здания)</span
-    >
-  </p>
+    <span class="contact-info_2">Адрес: Казахстан, Петропавловск, ул. Интернациональная 18, н.п. 2 (вход с
+        торца здания)</span>
+</p>
+
 </html>
